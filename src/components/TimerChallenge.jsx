@@ -63,7 +63,7 @@ function TimerChallenge(props) {
         />
 
         <section className="challenge" >
-
+            
             <h2>{props.title}</h2>
             <p className="challenge-time">
                 {props.targetTime} second{props.targetTime > 1 ? 's' : ''}

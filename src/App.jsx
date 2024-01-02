@@ -1,5 +1,5 @@
 import Player from './components/Player';
-import TimerChallenge from './components/TimerChanllenge';
+import TimerChallenge from './components/TimerChallenge';
 
 function App() {
   return (

@@ -18,6 +18,7 @@ let ResultModal = forwardRef(function ResultModal(
     };
   });
   return (
+  <>
     <dialog ref={dialog} className="result-modal" onClose={onReset}>
       {userLost && <h2>You lost</h2>}
       {!userLost && <h2>Your Score: {score}</h2>}
@@ -31,8 +32,8 @@ let ResultModal = forwardRef(function ResultModal(
       <form method="dialog" onSubmit={onReset}>
         <button>Close</button>
       </form>
-    </dialog>,
-    document.getElementById('modal')
+    </dialog>
+  </>
   );
 });
 
