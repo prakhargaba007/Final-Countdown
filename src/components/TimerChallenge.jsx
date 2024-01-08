@@ -3,30 +3,6 @@ import ResultModal from "./ResultModal"
 
 function TimerChallenge(props) {
 
-    // let [timerStarted, setTimerStarted] = useState(false)
-    // let [timerExpired, setTimerExpired] = useState(false)
-
-
-
-    // function handleStart() {
-    //     timer.current = setTimeout(() => {
-    //         // setTimerExpired(true)
-    //         dialog.current.open()
-    //     }, props.targetTime * 1000);
-
-    //     setTimerStarted(true)
-    // }
-
-    // function handleStop() {
-    //     clearTimeout(timer.current)
-    //     setTimerStarted(false)
-    //     // setTimerExpired(false)
-    // }
-
-    // function handleClose() {
-    //     setTimerStarted(false)
-    // }
-
     let timer = useRef()
     let dialog = useRef()
     const [timeRemaining, setTimeRemaining] = useState(props.targetTime * 1000);
@@ -58,7 +34,6 @@ function TimerChallenge(props) {
             remainingTime={timeRemaining}
             ref={dialog}
             targetTime={props.targetTime}
-            // result='YOU LOST!!!' 
             onReset={handleReset}
         />
 

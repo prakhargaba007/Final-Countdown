@@ -6,17 +6,10 @@ export default function Player() {
   let playerName = useRef()
 
   const [enteredPlayerName, setEnteredPlayerName] = useState(null)
-  // const [submited, setSubmited] = useState(false)
-
-  // function handleChange(event) {
-  //   setSubmited(false)
-  //   setEnterdPlayerName(event.target.value)
-  // }
 
   function handleClick() {
     setEnteredPlayerName(playerName.current.value)
     playerName.current.value = ''
-    // playerName.current.
   }
 
   return (
